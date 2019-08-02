@@ -1,0 +1,183 @@
+
+@font-face {
+    font-family: 'brandon';
+    src: url('BrandonGrotesque-Regular.woff2') format('woff2'),
+        url('BrandonGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'brandonlight';
+    src: url('BrandonGrotesque-Light.woff2') format('woff2'),
+        url('BrandonGrotesque-Light.woff') format('woff');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'brandonthin';
+  src: url('BrandonGrotesque-Thin.woff2') format('woff2'),
+       url('BrandonGrotesque-Thin.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+}
+body {
+  font-family:'brandon';
+  text-anchor: middle;
+  text-align: center;
+  overflow-x: hidden;
+  text-align: center;
+  justify-content: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+canvas {
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  height:100%;
+  width:100%;
+}
+#canvaContainer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height:100%;
+  width:100%;
+  transform: translate(-50%, -50%);
+}
+.centered {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#iframeID {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#canvaContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  mix-blend-mode: multiply;
+}
+#logoCon {
+  position:fixed;
+  bottom:10%;
+  left: 120%;
+  mix-blend-mode: difference;
+}
+#logo {
+  transform: translate(-50px);
+  width:50px;
+}
+#logoConTop {
+  position:fixed;
+  top:-10%;
+  left: 50%;
+  transform: translate(-50%);
+  mix-blend-mode: difference;
+}
+#logoTop {
+  height:60px;
+}
+.titleContainer {
+  position: absolute;
+  transform: translate(-50%, -70%);
+  top: 50%;
+  left: 50%;
+  font-family: 'brandonthin';
+  line-height: 110%;
+  width:100%;
+  font-size: 8.5vw;
+}
+#latest {
+  position: absolute;
+  top: 82%;
+  width: 100%;
+}
+#cubettino {
+  position: absolute;
+  width:0px;
+  height:0px;
+  background-color: white;
+  transform: translate(-50%);
+  left: 50%;
+  top: 86%;
+  mix-blend-mode: difference;
+  pointer-events: none;
+}
+#crew {
+  position: absolute;
+  top: 89.5%;
+}
+.button {
+  font-family: 'brandon';
+  width:100%;
+  font-size: 30px;
+}
+.addedText {
+  font-family: 'brandonthin';
+  width:100%;
+  font-size: 6vw;
+  opacity: 1;
+}
+#debID {
+  transform: translate(-50%,-50%);
+  font-family: 'brandon';
+  position: fixed;
+  left: 50%;
+  top: 4%;
+  font-size: 30px;
+}
+::selection {
+  color: #fff;
+  background: #000;
+  background-blend-mode: difference;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #000;
+  text-shadow: none;
+}
+a:link, a:visited {
+  color: black;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  color: black;
+}
+@media (max-width: 991.98px) {
+
+  .button {
+    font-family: 'brandon';
+    width:100%;
+    font-size: 25px;
+  }
+  #logoTop {
+    height:50px;
+  }
+}
+
+
+
+@media (max-width: 575.98px) {
+  .button {
+    font-family: 'brandon';
+    width:100%;
+    font-size: 25px;
+  }
+
+}
